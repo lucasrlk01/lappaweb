@@ -1,0 +1,268 @@
+/* Importação de fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo dos botões de autenticação */
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.auth-buttons .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo específico para o botão de registro */
+.auth-buttons .register-btn {
+    background-color: #28a745;
+}
+
+.auth-buttons .register-btn:hover {
+    background-color: #218838;
+}
+
+/* Estilos da tela de login e cadastro */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0f0f0f;
+}
+
+.login-form {
+    background-color: #1c1c1e;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.login-form input::placeholder {
+    color: #9e9e9e;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.login-form p {
+    color: #888;
+    text-align: center;
+}
+
+.login-form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Estilos da barra lateral */
+.sidebar {
+    width: 220px;
+    background-color: #1c1c1e;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Estilo dos itens do menu lateral ao passar o mouse */
+.sidebar ul li:hover {
+    background-color: #00bfff; /* Azul claro */
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+.user-info {
+    text-align: center;
+}
+
+.user-pic {
+    background-color: #007bff;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+
+.user-pic img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-size: 16px;
+}
+
+/* Estilos do conteúdo principal */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
+}
+
+header {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Estilos da seção resumo */
+.resumo {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #1c1c1e;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+/* Estilos dos cards de saldo */
+.card .card-title {
+    font-size: 18px;
+}
+
+.card .card-value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card.vendas-hoje .card-title,
+.card.vendas-hoje .card-value {
+    color: #00bfff; /* Azul claro */
+}
+
+.card.saldo-disponivel .card-title,
+.card.saldo-disponivel .card-value {
+    color: #90ee90; /* Verde claro */
+}
+
+.card.saldo-pendente .card-title,
+.card.saldo-pendente .card-value {
+    color: #ffcc00; /* Amarelo meio alaranjado */
+}
+
+.card.nivel {
+    background-color: #1c1c1e;
+    color: #ff6f6f; /* Vermelho fraco */
+}
+
+.card.nivel .card-title,
+.card.nivel .card-value {
+    color: #ff6f6f;
+}
+
+.nivel-info p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Estilo da área do gráfico */
+.grafico-area {
+    background-color: #1c1c1e;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #ffffff;
+}
